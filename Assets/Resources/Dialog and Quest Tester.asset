@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9b26819e5bd3f4298e14585e3cfa3b, type: 3}
+  m_Name: Dialog and Quest Tester
+  m_EditorClassIdentifier: 
+  dialogObject:
+    saveableNodeList:
+    - inboundConnections: []
+      promptText: Hello! Welcome to the Dialog Testing Scene!!
+      nodeResponses:
+      - responseText: I choose response 1!
+        restrictions: []
+        outboundConnection:
+          nodePoint: 1
+          responseParent: 0
+          responsePoint: 0
+      - responseText: I choose response 2!
+        restrictions: []
+        outboundConnection:
+          nodePoint: 2
+          responseParent: 0
+          responsePoint: 1
+      position: {x: 241, y: 368}
+    - inboundConnections:
+      - nodePoint: 1
+        responseParent: 0
+        responsePoint: 0
+      promptText: You chose response 1!
+      nodeResponses:
+      - responseText: I would like to accept a quest please
+        restrictions:
+        - command: 2
+          itemType: 2
+          restrictionText: 0
+        outboundConnection:
+          nodePoint: -1
+          responseParent: 0
+          responsePoint: 0
+      position: {x: 608, y: 250}
+    - inboundConnections:
+      - nodePoint: 2
+        responseParent: 0
+        responsePoint: 1
+      promptText: You chose response 2!
+      nodeResponses:
+      - responseText: I would like to accept a quest please
+        restrictions:
+        - command: 2
+          itemType: 2
+          restrictionText: 0
+        outboundConnection:
+          nodePoint: -1
+          responseParent: 0
+          responsePoint: 0
+      position: {x: 654, y: 747}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c93d519e50882ff46bd93d064d7c2fbd, type: 3}
+  m_Name: New Destroy Bandits Easy
+  m_EditorClassIdentifier: 
+  id: 1
+  title: Patrol the Farmlands
+  desc: There have been reports of bandits moving into the area. You are tasked with
+    destroying atleast 3 of them.
+  lastStage: 10
+  currentStage: 0
+  dialogLoader: {fileID: 0}
+  killCount: 0
+  killRequirement: 3
